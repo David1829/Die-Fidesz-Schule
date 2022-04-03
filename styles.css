@@ -1,0 +1,144 @@
+img{
+    border-radius: 10px;
+}
+/*Fejléc*/
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.here{
+    font-weight: bold;
+    color: gray;
+}
+
+.nav-item a{
+    color: #ff6a00
+}
+
+.nav-item a:hover{
+    color: #ff6a00cb;
+    background-color: #ff6a000a;
+}
+
+.nav-item a:active{
+    color: #ff6a008a
+}
+
+
+/*Órarend*/
+.osztály{
+    height: 75px;
+    display: grid;
+}
+
+.osztály p{
+    margin: auto;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.felső{
+    display: grid;
+    height: 100px;
+
+}
+
+.felső p{
+    margin: auto;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.bf{
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+.jf{
+    border: 5px solid black;
+}
+
+.alsó{
+    display: grid;
+    height: 100px;
+
+}
+
+.alsó p{
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ba{
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.ja{
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.narancs{
+    background-color: #ff6a007c;
+}
+
+.narancsabb{
+    background-color: #ff6a00b4;
+}
+
+.alja{
+    height: 500px;
+}
+
+/*Főoldal*/
+
+.Maincím{
+    display: grid;    
+    font-size: 40px;
+    background-color: #ff6a00;
+    color: white;
+}
+
+.Maincím p{
+    margin:auto;
+
+}
+
+.közép{
+    display:grid
+}
+
+.közép p{
+    margin: auto;
+}
+
+.közép img{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+
+.háttér{
+    background-color: #5e6f80;
+    color: white
+    ;
+}
+
+.aláírás{
+    background-color: #ff6a0077;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menupont{
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #ff6a00;
+}
