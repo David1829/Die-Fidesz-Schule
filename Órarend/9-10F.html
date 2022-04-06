@@ -8,6 +8,7 @@
 <script src="../jquery.slim.min.js"></script>
 <script src="../popper.min.js"></script>
 <script src="../bootstrap.bundle.min.js"></script>
+<scrip src="../tdh.js"></scrip>
 <title>Fidesz Iskola</title>
 </head>
 <body  class="háttér">
@@ -66,9 +67,11 @@
         </ul>
     </nav>
     <span>
+
     <div class="row">
         <div class="col-sm-12 osztály">
             <p>13.-14. F osztály</p>
+            <input type="range" class="form-control-range" id="szakok" value="5" min="1" max="5" onchange="frissit()">
         </div>
     </div>
     <div class="row">
@@ -96,13 +99,13 @@
             <p></p>
         </div>
         <div class="col-sm-2 alsó narancs ba">
-            <p></p>
+            <p id="hely1"></p>
         </div>
         <div class="col-sm-2 alsó narancsabb ba">
-            <p></p>
+            <p id="hely2"></p>
         </div>
         <div class="col-sm-2 alsó narancs ba">
-            <p></p>
+            <p id="hely3"></p>
         </div>
         <div class="col-sm-2 alsó narancsabb ba">
             <p></p>
@@ -175,7 +178,7 @@
         <div class="col-sm-12 alja">
 
         </div>
-    </div>    
+    </div>   
     </span>
 </body>
 </html>
