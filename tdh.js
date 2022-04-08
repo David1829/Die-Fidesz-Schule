@@ -17,10 +17,30 @@ function listaelem(szaks){
 
 function frissit(){
     var szak = document.getElementById('szakok').value;
-    document.getElementById('osztaly').innerHTML = listaelem(szakok[szak].split(";")[0]); 
+    document.getElementById('osztaly').innerHTML = listaelem(szakok[szak].split(";")[0]); // osztály
     document.getElementById('h2').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('k2').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('sz2').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('cs2').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('p2').innerHTML = listaelem(szakok[szak].split(";")[1]); //1. óra
     document.getElementById('h3').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('k3').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('sz3').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('cs3').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('p3').innerHTML = listaelem(szakok[szak].split(";")[2]); //2. óra
     document.getElementById('h4').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('k4').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('sz4').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('cs4').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('p4').innerHTML = listaelem(szakok[szak].split(";")[3]); //3. óra
     document.getElementById('h5').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('k5').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('sz5').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('cs5').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('p5').innerHTML = listaelem(szakok[szak].split(";")[4]); //4.óra
     document.getElementById('h6').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('k6').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('sz6').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('cs6').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('p6').innerHTML = listaelem(szakok[szak].split(";")[5]); //5.óra
 }
