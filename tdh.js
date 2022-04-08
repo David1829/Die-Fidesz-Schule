@@ -2,7 +2,7 @@ var szakok = [];
 szakok[1]="13.-14. F osztály; Oszlopásás; Kerítésállítás; Sprintfutás; Vetődés; Célbalövés";
 szakok[2]="13.-14. I osztály; Gazdasági óra; Közpénzelbaszás; Tőzsde; Betörés; Adócsalás";
 szakok[3]="13.-14. D osztály; Ereszcsúszás; M.Orgia; Angol; Wacyournémet; AntiSoros-terv ";
-szakok[4]="13.-14. E osztály; Reklámkészítés; Videóvágás; Képzelőerő fejl.; Hibák megfogása; F.Eszme gyakorlás";
+szakok[4]="13.-14. E osztály; Reklámkészítés; Anti-LMBTQ óra; Képzelőerő fejl.; Hibák megfogása; F.Eszme gyakorlás";
 szakok[5]="13.-14. SZ osztály; Sikkasztás; Építészet; Kisvasút terv.; Tervrajz kész.; FDE.";
 
 function listaelem(szaks){
