@@ -142,3 +142,18 @@ img{
     font-weight: bolder;
     background-color: #ff6a00;
 }
+
+.lebeg .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.lebeg .img-bottom{
+position: relative;
+display: block;
+}
+.lebeg:hover .img-top{
+    display: inline;
+}
