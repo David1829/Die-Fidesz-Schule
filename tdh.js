@@ -1,23 +1,46 @@
-var szakok = new Array(5);
-szakok[1]="Jerzsabek Károly (HUN),22:10:36;Ladányi Gedeon (HUN),+6 p 5 mp;Bouska II. József (HUN),+20 p 33 mp";
-szakok[2]="Vida László (HUN),20:05:25;Hölczl Károly (HUN),+13 p 25 mp;Bouska I. (HUN),+13 p 54 mp";
-szakok[3]="Vida László (HUN),30:36:17;Huszka Dezső (HUN),+19 p 3 mp;Hugyecz Károly (HUN),+28 p 7 mp";
-szakok[4]="Oskar Thierbach (GER),21:31:33;Jálics Béla (HUN),+14 p 20 mp;Istenes János (HUN),+15 p 40 mp";
-szakok[5]="Kecske, Medve, Kuki";
-function listaelem(eredmeny){
-  if (eredmeny.includes("(HUN)")) {
-    return "<em>"+eredmeny.replace(",","<br>")+"</em>";
+var szakok = [];
+szakok[1]="13.-14. F osztály; Oszlopásás; Kerítésállítás; Sprintfutás; Vetődés; Célbalövés";
+szakok[2]="13.-14. I osztály; Gazdasági óra; Közpénzelbaszás; Tőzsde; Betörés; Adócsalás";
+szakok[3]="13.-14. D osztály; Ereszcsúszás; M.Orgia; Angol; Wacyournémet; AntiSoros-terv ";
+szakok[4]="13.-14. E osztály; Reklámkészítés; Anti-LMBTQ óra; Képzelőerő fejl.; Hibák megfogása; F.Eszme gyakorlás";
+szakok[5]="13.-14. SZ osztály; Sikkasztás; Építészet; Kisvasút terv.; Tervrajz kész.; FDE.";
+
+function listaelem(szaks){
+  if (szaks.includes("(HUN)")) {
+    return "<b>"+szaks.replace(",","<br>")+"</b>";
   } 
   else
   {
-    return eredmeny.replace(",","<br>");
+    return szaks.replace(",","<br>");
   }
 }
 
 function frissit(){
-    var sorsz = document.getElementById('szakok').value;
-    document.getElementById('sorszam').innerText = sorsz;
-    document.getElementById('hely1').innerHTML = listaelem(szakok[sorsz].split(";")[1]); 
-    document.getElementById('hely2').innerHTML = listaelem(szakok[sorsz].split(";")[2]); 
-    document.getElementById('hely3').innerHTML = listaelem(szakok[sorsz].split(";")[3]); 
+    var szak = document.getElementById('szakok').value;
+    document.getElementById('osztaly').innerHTML = listaelem(szakok[szak].split(";")[0]); // osztály
+    document.getElementById('h5').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('k4').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('sz6').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('cs3').innerHTML = listaelem(szakok[szak].split(";")[1]); 
+    document.getElementById('p2').innerHTML = listaelem(szakok[szak].split(";")[1]); //1. óra
+    document.getElementById('h6').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('k2').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('sz3').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('cs5').innerHTML = listaelem(szakok[szak].split(";")[2]); 
+    document.getElementById('p3').innerHTML = listaelem(szakok[szak].split(";")[2]); //2. óra
+    document.getElementById('h2').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('k5').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('sz4').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('cs6').innerHTML = listaelem(szakok[szak].split(";")[3]); 
+    document.getElementById('p4').innerHTML = listaelem(szakok[szak].split(";")[3]); //3. óra
+    document.getElementById('h3').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('k6').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('sz5').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('cs2').innerHTML = listaelem(szakok[szak].split(";")[4]);
+    document.getElementById('p5').innerHTML = listaelem(szakok[szak].split(";")[4]); //4.óra
+    document.getElementById('h4').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('k3').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('sz2').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('cs4').innerHTML = listaelem(szakok[szak].split(";")[5]);
+    document.getElementById('p6').innerHTML = listaelem(szakok[szak].split(";")[5]); //5.óra
 }

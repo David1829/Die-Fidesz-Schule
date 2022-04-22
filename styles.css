@@ -144,6 +144,24 @@ img{
 }
 
 
+.lebeg .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.lebeg .img-bottom{
+position: relative;
+display: block;
+}
+.lebeg:hover .img-top{
+    display: inline;
+}
+
+
+
+
 .rajzkep{
     width: auto;
     height: auto;
