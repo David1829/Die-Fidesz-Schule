@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../bootstrap.min.css">
-<script src="../bootstrap.min.js"></script>
-<script src="../jquery.slim.min.js"></script>
-<script src="../popper.min.js"></script>
-<script src="../bootstrap.bundle.min.js"></script>
-<script src="../tdh.js"></script>
-<title>Fidesz Iskola</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../bootstrap.min.js"></script>
+    <script src="../jquery.slim.min.js"></script>
+    <script src="../popper.min.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="../tdh.js"></script>
+    <title>Fidesz Iskola</title>
 </head>
-<body  class="háttér">
+
+<body class="háttér">
     <nav class="navbar bg-dark navbar-expand-sm sticky-top justify-content-center">
         <a class="navbar-barnd">
             <img src="../fidesz.png" class="logo">
         </a>
-        <ul class="navbar-nav"href="">
+        <ul class="navbar-nav" href="">
             <li class="nav-item">
                 <a class="nav-link" href="../Főoldal/index.html">Főoldal</a>
             </li>
@@ -35,7 +37,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link here"href="../Órarend/orarend.html">
+                <a class="nav-link here" href="../Órarend/orarend.html">
                     Órarend
                 </a>
             </li>
@@ -52,148 +54,146 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Alapítvány/Alapítvány.html">Alalpítvány</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="../Elérhetőségek/Elérhetőségek.html">Elérhetőségeink</a>
             </li>
         </ul>
     </nav>
     <span>
         <form>
-    <div class="row">
-        <div class="col-sm-12 osztály">
-            <p id="osztaly"></p>
-            
-            <input type="range" min="1" max="5" class="form-control-range" id="szakok" value="szakok" onchange="frissit();">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 felső narancs bf">
-            <p>Csengetési rend</p>
-        </div>
-        <div class="col-sm-2 felső narancsabb bf">
-            <p>Hétfő</p>
-        </div>
-        <div class="col-sm-2 felső narancs bf">
-            <p>Kedd</p>
-        </div>
-        <div class="col-sm-2 felső narancsabb bf">
-            <p>Szerda</p>
-        </div>
-        <div class="col-sm-2 felső narancs bf">
-            <p>Csütörtök</p>
-        </div>
-        <div class="col-sm-2 felső narancsabb jf">
-            <p>Péntek</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p>8:00-9:00</p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="h2"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="k2"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="sz2"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="cs2"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ja">
-            <p id="p2"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 alsó narancs ba">
-            <p>9:00-10:00</p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="h3"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="k3"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="sz3"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="cs3"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ja">
-            <p id="p3"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p>10:00-11:00</p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="h4"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="k4"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="sz4"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="cs4"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ja">
-            <p id="p4"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 alsó narancs ba">
-            <p>11:00-12:00</p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="h5"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="k5"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="sz5"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="cs5"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ja">
-            <p id="p5"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p>12:00-13:00</p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="h6"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="k6"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ba">
-            <p id="sz6"></p>
-        </div>
-        <div class="col-sm-2 alsó narancsabb ba">
-            <p id="cs6"></p>
-        </div>
-        <div class="col-sm-2 alsó narancs ja">
-            <p id="p6"></p>
-        </div>
-    <div class="row">
-        </div>
-        <div class="col-sm-12 alja">
+            <div class="row">
+                <div class="col-sm-12 osztály">
+                    <p id="osztaly"></p>
 
-        </div>
-    </div>   
-    </form>
+                    <input type="range" min="1" max="5" class="form-control-range" id="szakok" value="szakok" onchange="frissit();">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 felső narancs bf">
+                    <p>Csengetési rend</p>
+                </div>
+                <div class="col-sm-2 felső narancsabb bf">
+                    <p>Hétfő</p>
+                </div>
+                <div class="col-sm-2 felső narancs bf">
+                    <p>Kedd</p>
+                </div>
+                <div class="col-sm-2 felső narancsabb bf">
+                    <p>Szerda</p>
+                </div>
+                <div class="col-sm-2 felső narancs bf">
+                    <p>Csütörtök</p>
+                </div>
+                <div class="col-sm-2 felső narancsabb jf">
+                    <p>Péntek</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p>8:00-9:00</p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="h2"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="k2"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="sz2"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="cs2"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ja">
+                    <p id="p2"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 alsó narancs ba">
+                    <p>9:00-10:00</p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="h3"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="k3"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="sz3"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="cs3"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ja">
+                    <p id="p3"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p>10:00-11:00</p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="h4"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="k4"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="sz4"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="cs4"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ja">
+                    <p id="p4"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 alsó narancs ba">
+                    <p>11:00-12:00</p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="h5"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="k5"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="sz5"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="cs5"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ja">
+                    <p id="p5"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p>12:00-13:00</p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="h6"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="k6"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ba">
+                    <p id="sz6"></p>
+                </div>
+                <div class="col-sm-2 alsó narancsabb ba">
+                    <p id="cs6"></p>
+                </div>
+                <div class="col-sm-2 alsó narancs ja">
+                    <p id="p6"></p>
+                </div>
+                <div class="row">
+                </div>
+                <div class="col-sm-12 alja">
+
+                </div>
+            </div>
+        </form>
     </span>
 </body>
+
 </html>
