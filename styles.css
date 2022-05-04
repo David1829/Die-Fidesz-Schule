@@ -182,3 +182,38 @@ p.felhivas{
 .törzsszöveg{
     font-size: 25px;
 }
+
+/*felvétél*/
+
+p.felhiv{
+    font-size: 25px;
+}
+p.felhiv-l{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+table.felvet{
+    text-align: left;
+    max-width: 100%;
+    min-width: 50%;
+    width: 100%;
+    margin: auto;
+}
+table.felvet tr{
+    height: auto;
+    width: auto;
+}
+table.felvet tr th{
+    text-align: center;
+    border: 2px solid #ff6a00 ;
+}
+table.felvet tr td{
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #ff6a00 ;
+}
+img.osztalykep{
+    height: 97%;
+    width: 97%;
+}
