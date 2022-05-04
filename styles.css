@@ -1,6 +1,14 @@
 img{
     border-radius: 10px;
 }
+.középreig{
+    text-align: center;
+}
+
+.sorkiz{
+    text-align: justify;
+}
+
 /*Fejléc*/
 .logo{
     width: 50px;
@@ -160,13 +168,17 @@ display: block;
 }
 
 
-
+/*Rajz*/
 
 .rajzkep{
     width: auto;
     height: auto;
 }
 p.felhivas{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
+}
+
+.törzsszöveg{
+    font-size: 25px;
 }
