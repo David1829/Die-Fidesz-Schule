@@ -243,3 +243,7 @@ input[type="text"]{
     font-size: 40px;
     font-weight: 600;
 }
+
+.link a:hover{
+    color:#ff6a00
+}
