@@ -224,3 +224,15 @@ img.megkep{
     height: 100%;
 }
 
+/*Elérhetőség*/
+.parlkep{
+    width: 400px;
+    height: 270px;
+}
+.urlap{
+    font-weight: bold;
+    color: blue;
+}
+input[type="text"]{
+    width: 300px;
+}
