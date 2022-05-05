@@ -69,18 +69,22 @@
         </div>
     <div class="row">
         <div class="col-md-6">
-            <h3 class="kozepreig sorkiz">2022. április 3.án lezajlott a magyarországi népszavazás és választás.</h3>
-            <hr><br>
-            <h5>Néhány érdekes információ:</h5>
+            <p>2022. április 3.án lezajlott a magyarországi népszavazás és választás.</p>
+            <p>Néhány érdekes információ:</p>
             <ul>
                 <li>A részvételi arány: 70,21%
                 <li>Mandátumok: Fidesz: 67,5%
-                <li>Többet nem is kell tudni.....
-            </ul>
-        </div><div class="col-md-6"><img src="../Főoldal/választás.jpg" alt="Szavazódoboz"></div>
-    </div>
 
-        <button onclick="ered()" id="eredmenygomb">Betöltés</button>
+            </ul>
+        </div>
+        <h1 onclick=changeText(this)>Betöltés</h1>
+        <script>
+        function changeText(id) {
+       id.innerHTML = "Fidesz:; listavezető: Orbán Viktor 135 / 199 (68%) DK–Jobbik–Momentum–MSZP–LMP–Párbeszéd:; listavezető: Márki-Zay Péter; 57 / 199 (29%) Mi Hazánk:; listavezető: Toroczkai László ;6 / 199 (3%)".split(";")
+       
+          }</script>
+        <div class="col-md-6"><img src="../Főoldal/választás.jpg" alt="Szavazódoboz"></div>
+    </div>
 
 
 
