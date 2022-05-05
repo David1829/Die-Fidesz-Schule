@@ -1,2 +1,0 @@
-function changeText(id) {
-       id.innerHTML = "Fidesz:; listavezető: Orbán Viktor 135 / 199 (68%) DK–Jobbik–Momentum–MSZP–LMP–Párbeszéd:; listavezető: Márki-Zay Péter; 57 / 199 (29%) Mi Hazánk:; listavezető: Toroczkai László ;6 / 199 (3%)".split(";")

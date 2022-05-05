@@ -9,7 +9,6 @@
     <script src="../jquery.slim.min.js"></script>
     <script src="../popper.min.js"></script>
     <script src="../bootstrap.bundle.min.js"></script>
-    <script src="/igen.js"></script>
     <title>Fidesz Iskola</title>
 </head>
 
@@ -77,12 +76,15 @@
 
             </ul>
         </div>
-        <h1 onclick=changeText(this)>Betöltés</h1>
+        <div class="col-md-6">
+        <h1 onclick=changeText(this) style="font-size: medium; font-weight: normal;">Betöltés(Katt ide)</h1>
         <script>
         function changeText(id) {
-       id.innerHTML = "Fidesz:; listavezető: Orbán Viktor 135 / 199 (68%) DK–Jobbik–Momentum–MSZP–LMP–Párbeszéd:; listavezető: Márki-Zay Péter; 57 / 199 (29%) Mi Hazánk:; listavezető: Toroczkai László ;6 / 199 (3%)".split(";")
+       id.innerHTML = "Fidesz:<br>listavezető: Orbán Viktor<br>135 / 199 (68%)<br>DK–Jobbik–Momentum–MSZP–LMP–Párbeszéd:<br>listavezető: Márki-Zay Péter<br>57 / 199 (29%)<br> Mi Hazánk:<br>listavezető: Toroczkai László<br>6 / 199 (3%)"
        
-          }</script>
+          }
+          </script>
+          </div>
         <div class="col-md-6"><img src="../Főoldal/választás.jpg" alt="Szavazódoboz"></div>
     </div>
 
