@@ -236,3 +236,10 @@ img.megkep{
 input[type="text"]{
     width: 300px;
 }
+
+/*Szakok*/
+
+.felhivas{
+    font-size: 40px;
+    font-weight: 600;
+}
